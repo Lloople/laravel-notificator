@@ -1,5 +1,5 @@
 {
-    "name": "lloople/notificator",
+    "name": "lloople/laravel-notificator",
     "description": "Attach objects to notification's session flashed variable",
     "type": "library",
     "require": {
