@@ -1,13 +1,13 @@
 <?php
 
 
-namespace Notificator;
+namespace Lloople\Notificator;
 
 
 /**
  * Class NotificatorMessage
  *
- * @package Notificator
+ * @package Lloople\Notificator
  */
 class NotificatorMessage
 {
