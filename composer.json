@@ -17,5 +17,13 @@
         "psr-4": {
             "Lloople\\Notificator\\" : "src/"
         }
+    },
+    "extra" : {
+	    "laravel" : {
+		    "aliases": [
+			    "Lloople\\Notificator\\Notificator"
+		    ]
+	    }
     }
+
 }
