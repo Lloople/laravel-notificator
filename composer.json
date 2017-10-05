@@ -5,6 +5,10 @@
     "require": {
         "php": ">=7.0"
     },
+    "require-dev": {
+        "phpunit/phpunit": "~6.0",
+        "orchestra/testbench": "~3.0"
+    },
     "license": "MIT",
     "authors": [
         {
@@ -15,7 +19,8 @@
     "minimum-stability": "stable",
     "autoload" : {
         "psr-4": {
-            "Lloople\\Notificator\\" : "src/"
+            "Lloople\\Notificator\\" : "src/",
+            "Tests\\": "tests/"
         }
     },
     "extra" : {
