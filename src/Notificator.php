@@ -64,7 +64,7 @@ class Notificator
 
     public static function all()
     {
-        return session('notifications');
+        return session('notifications', []);
     }
 
     public static function find($id)

@@ -25,12 +25,14 @@ class NotificatorTest extends TestCase
     /** @test */
     public function can_get_all_notifications_as_array()
     {
+        $this->assertCount(0, Notificator::all());
+
         Notificator::success('ok');
         Notificator::error('ko');
 
         $this->assertInternalType('array', Notificator::all());
 
-        $this->assertEquals(2, count(Notificator::all()));
+        $this->assertCount(2, Notificator::all());
     }
 
     /** @test */
