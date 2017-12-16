@@ -130,4 +130,16 @@ class NotificatorTest extends TestCase
 
         $this->assertTrue(Notificator::any());
     }
+
+    /** @test */
+    public function can_return_notifications_as_array()
+    {
+        Notificator::warning('A notification about nothing');
+
+        $array = Notificator::toArray();
+
+        $this->assertCount(1, $array);
+
+        $this->assertEquals('warning', $array[0]['type']);
+    }
 }
