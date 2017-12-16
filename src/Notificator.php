@@ -5,6 +5,8 @@ namespace Lloople\Notificator;
 class Notificator
 {
 
+    const VERSION = '1.5.1';
+    
     /**
      * @param string $type
      * @param string $message
