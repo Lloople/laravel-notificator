@@ -67,4 +67,14 @@ class NotificatorMessage
     {
         return $this->type == 'error' ? 'danger' : $this->type;
     }
+
+    public function toArray(): array
+    {
+        return [
+            'type' => $this->getType(),
+            'id' => $this->getId(),
+            'message' => $this->getMessage(),
+            'duration' => $this->getDuration()
+        ];
+    }
 }

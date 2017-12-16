@@ -83,4 +83,11 @@ class Notificator
     {
         return session()->has('notifications');
     }
+
+    public static function toArray()
+    {
+        return collect(self::all())->map(function (NotificatorMessage $notification) {
+            return $notification->toArray();
+        })->values();
+    }
 }
